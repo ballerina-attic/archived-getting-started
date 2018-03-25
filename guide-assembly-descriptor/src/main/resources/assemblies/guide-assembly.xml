@@ -7,16 +7,15 @@
     </formats>
     <fileSets>
         <fileSet>
-            <directory>
-                src
-            </directory>
-            <outputDirectory>src</outputDirectory>
+            <directory>${basedir}</directory>
+            <outputDirectory>.</outputDirectory>
+            <excludes>
+                <exclude>target/</exclude>
+                <exclude>pom.xml</exclude>
+                <exclude>issue_template.md</exclude>
+                <exclude>LICENSE</exclude>
+                <exclude>pull_request_template.md</exclude>
+            </excludes>
         </fileSet>
     </fileSets>
-    <files>
-        <file>
-            <source>README.md</source>
-            <outputDirectory>.</outputDirectory>
-        </file>
-    </files>
 </assembly>
